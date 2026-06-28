@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/assets/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+
+    <title>Signin</title>
+    <style>
+      a:link, a:visited {
+        background-color: rgb(82, 48, 238);
+        color: rgb(245, 243, 243);
+        border: 2px solid rgb(235, 238, 238);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(82, 48, 238);
+        color: white;
+      }
+      </style>
+  </head>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="static/assets/images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h3>Validation Form</h3>
+              
+            </div>
+                
+               
+                    <form action="{{ url_for('predict_lo') }}" method="POST">
+                      <h1 style="color: rgb(0, 34, 128);">Write the OTP here!</h1>
+                      <div class="form-group first">
+                        <input class="form-control" type="text" name="message" required="required" style="font-size: 12pt;  color: #333;">
+                      </div>
+                      <br />
+                      <div class="p-t-15">
+                        <button class="btn btn-block btn-primary"type="submit">Submit</button>
+                      </div>
+                    </form>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        
+          <script src="static/assets/js/jquery-3.3.1.min.js"></script>
+          <script src="static/assets/js/popper.min.js"></script>
+          <script src="static/assets/js/bootstrap.min.js"></script>
+          <script src="static/assets/js/main.js"></script>
+        </body>
+      </html>
